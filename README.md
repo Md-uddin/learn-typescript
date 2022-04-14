@@ -1,2 +1,1 @@
-practising complete typescript 
-and practising react hooks
+practising Typscript and making an usefull example
