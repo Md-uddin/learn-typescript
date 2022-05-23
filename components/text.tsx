@@ -10,7 +10,7 @@ type PositiveNumber = RandomNumberTyp & { ///extending previous type and adding 
   isNegative?: never;
   isZero?: never;
 }
-type negativeNumber = RandomNumberTyp & { ///extending previous type and adding one more and restricting other props to be passed
+type negativeNumber = RandomNumberTyp &{ ///extending previous type and adding one more and restricting other props to be passed
   isNegative: boolean;
   isPositive?: never;
   isZero?: never;

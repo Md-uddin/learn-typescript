@@ -22,7 +22,7 @@ const HomePage = (props: Props) => {
 }
   type ResetAction = {
     type: "RESET" ,
- 
+
 }
 const initialState ={count:0}
 const reducer= (state:{count:number}, action:counterAction) => {

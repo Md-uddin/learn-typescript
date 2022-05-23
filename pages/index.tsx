@@ -2,13 +2,14 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import CustomButton from './components/CustomButton'
-import Heading from './components/Heading'
-import HomePage from './components/home'
-import List from './components/List'
-import Text from './components/polymorphic/Text.tsx/Text'
-import Test from './components/text'
-import Toast from './components/Toast'
+import CustomButton from '../components/CustomButton'
+import CustomComp from '../components/CustomComp'
+import Heading from '../components/Heading'
+import HomePage from '../components/home'
+import List from '../components/List'
+import Text from '../components/polymorphic/Text.tsx/Text'
+import Test from '../components/text'
+import Toast from '../components/Toast'
 
 
 const Home: NextPage = () => {
@@ -25,12 +26,13 @@ const Home: NextPage = () => {
         <Heading>my heading</Heading>
         {/* <List items={["spiderman","batman","ironman","superman"]} onClick={(item)=>console.log(item)}/>
         <List items={[1,2,3]} onClick={(item)=>console.log(item)}/> */}
-        <List items={[{ id: 'name' }, { id: 'unknown' }]} onClick={(item) => console.log(item)} />
+        <List items={[{ id: 'name',name:'md' }, { id: 'unknown' }]} onClick={(item) => console.log(item)} />
         <Test value={10} isPositive />
-        <Toast position="center" />
-        <CustomButton variant="primary" color="blue" onClick={() => { console.log('clicked') }}> click me </CustomButton>
+        <Toast position="left-top" />
+        <CustomButton variant="primary" color="blue" onClick={() => { console.log('clicked') }} > click me </CustomButton>
         <Text size="lg" as="button"  color="primary">this is text</Text>
         <Text size="lg" as="h6" color="primary">this is text</Text>
+        <CustomComp name="md" />
       </main>
 
 

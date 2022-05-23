@@ -4,7 +4,7 @@ type Props<E extends React.ElementType> = {
   size?: 'sm' | 'lg' | 'md'  
   color?: 'primary' | 'secondary'
   children?: React.ReactNode
-  as?:React.ElementType
+  as?:E
 }
 type textProps<E extends React.ElementType>= Props<E> & Omit<React.ComponentProps<E>,keyof Props<E>>
 

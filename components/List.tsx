@@ -6,7 +6,7 @@ type Props<t> = {
 }
 
 
-const List = <t extends {id:string}>({items,onClick}:Props<t>) => { ///this is called as generic props
+const List = <t extends  {id:string}>({items,onClick}:Props<t>) => { ///this is called as generic props
   return (
     <div>
       <h2>list of items</h2>
